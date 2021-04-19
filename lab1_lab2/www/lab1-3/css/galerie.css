@@ -1,0 +1,148 @@
+h1, h2 { 
+    background-color: #000040; 
+    color: #8080ff;
+    text-align:center; 
+}
+body { 
+    background: linear-gradient(0.25turn, #f69d3c, #ebf8e1, #36ca11);
+}
+
+main { 
+    background:#9dc73b; 
+    width:90%;
+    margin: 4%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+nav {
+    float:left; 
+    width:100%; 
+    padding:0; 
+    margin:30px 0;
+    background:#9dc73b; 
+}
+nav li {
+    float: left;    
+    margin:0;
+    padding:0;
+    list-style:none;
+    padding-right: 3px;
+    font-family: "Comic Sans MS", Comic Sans,cursive;
+    font-size: 85%;
+    border-radius: 30px;
+}
+nav a { /*Words in navigation*/
+    padding:4px 8px;
+    margin: 3px;
+    color:#ebe706;
+}
+nav a:hover {
+    color:#41c22f;
+    text-decoration:none;
+}
+
+section {
+    text-align: center;
+    padding-bottom: 50px;
+    background-color: skyblue;
+    margin:4%;
+    width:62%; 
+    float:left;
+    border-radius: 40px 10px;
+    box-shadow: 60px -16px rgb(60, 134, 177);
+    margin-bottom: 10%;
+}
+
+.images {
+    position: relative;
+    display: grid;
+    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: 200px 200px 200px;
+}
+
+img {
+    border-radius: 30px;
+}
+
+footer { 
+    background-color: #000040; 
+    color: #8080ff;
+    clear:both;
+    width:100%; 
+    padding:5px 0 5px 0;
+    text-align:center; 
+}
+aside {
+    float: right;
+    width: 20%;
+    padding: 1%;
+}
+#nav {
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+.box { 
+    background:#0000a0;
+    color:#dbffff;
+    padding: 5px;
+    margin: 5px;
+    font-size: 90%;
+    border-radius: 50% 20% / 10% 40%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.box a:hover {
+    border: 2px solid rgb(64, 114, 206);
+    border-radius: 20px;
+}
+
+.box li {
+    list-style-type: none;
+}
+
+*.box a {
+    color:#ffffb0;
+    text-decoration: none;
+}
+
+nav ul#nav li ul {
+    position: absolute;
+    padding: 0;
+    width: 177px;
+}
+
+ul#nav li {
+    list-style-type:none;
+    float: left;
+    background: #1e7fda;
+    margin-left: 3px;
+    border: 1px solid black;
+}
+
+ul#nav li a {
+    display : block;
+    padding : 4pt;
+    text-decoration : none;
+}
+
+ul#nav li ul {
+    overflow: hidden;
+    display: none;
+}
+
+ul#nav li:hover {
+    background: #569244;
+}
+
+ul#nav li:hover ul {
+    position: absolute;
+    padding: 0;
+    display: block;
+    width: 177px;
+}
+/* Fix media*/
+@media all and (max-width: 720px) {
+    .images {
+        width: 100%;
+    }
+}

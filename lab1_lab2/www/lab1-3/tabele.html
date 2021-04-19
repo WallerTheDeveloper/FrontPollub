@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/tabele.css" rel="stylesheet" type="text/css" />
+    <title>Szybki kurs HTML</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Szybki kurs HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a style="text-decoration: none;" href="index.html">Podstawowe znaczniki</a></li>
+                <li><a style="text-decoration: none;" href="tabele.html">Tworzenie tabel</a></li>
+                <li><a style="text-decoration: none;" href="formularze.html">Budowa formularzy</a></li>
+                <li><a style="text-decoration: none;" href="galerie.html">Galeria</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2><b>Podstawowe znaczniki do tworzenia tabel to:</b></h2>
+            <ul>
+                <li>
+                    <p>&lt;table&gt;- znacznik zawierajocy cala tabele</p>
+                </li>
+
+                <li>
+                    <p>&lt;caption&gt;- tytul tabeli</p>
+                </li>
+
+                <li>
+                    <p>&lt;thead&gt;- naglowek tabeli</p>
+                </li>
+
+                <li>
+                    <p>&lt;tbody&gt;- zawartosc tabeli</p>
+                </li>
+
+                <li>
+                    <p>&lt;tfoot&gt;- stopka tabeli</p>
+                </li>
+
+                <li>
+                    <p>&lt;tr&gt;- wiersz tabeli</p>
+                </li>
+
+                <li>
+                    <p>&lt;td&gt;- komorka tabeli(zawarta w wierszu)</p>
+                </li>
+
+                <li>
+                    <p>&lt;th&gt;- komorka naglowkowa tabeli</p>
+                </li>
+            </ul>
+
+            <h2>Przykladowa tabela HTML</h2>
+            <table cellspacing="1">
+                <caption>Popularnosc jezykow programowania</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Jezyk programowania</th>
+                        <th colspan="2">Pozycja</th>
+                    <tr>
+                        <th>Luty 2020</th>
+                        <th>2015</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Java</td>
+                        <td>1</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td>2</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>3</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>С++</td>
+                        <td>4</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>С#</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" style="padding: 10px;">
+                            <p></p>Na podstawie:</p>
+                            <a href="https://www.northeastern.edu/graduate/blog/most-popular-programming-languages/">Kliknij
+                                tutaj</a>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table> <br />
+        </section>
+        <footer> &copy;DG </footer>
+    </main>
+</body>
+
+</html>

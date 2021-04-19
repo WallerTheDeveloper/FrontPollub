@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title> Kreator pizzy </title>
+</head>
+
+<body>
+    <h1>Pizza creator</h1>
+    <div id="content">
+        <form action="mailto:beatap@cs.pollub.pl" method="post">
+            <fieldset>
+                <legend>Size:</legend>
+                <input type="radio" name="size" value="small" /> Small
+                <input type="radio" name="size" value="average" /> Average
+                <input type="radio" name="size" value="big" /> Big
+            </fieldset>
+
+            <fieldset>
+                <legend>Extra toppings:</legend>
+                <input type="checkbox" name="topping" value="ham" /> Ham <br />
+                <input type="checkbox" name="topping" value="salami" /> Salami <br />
+                <input type="checkbox" name="topping" value="bacon" /> Bacon <br />
+                <input type="checkbox" name="topping" value="paprika" /> Paprika <br />
+                <input type="checkbox" name="topping" value="tomato" /> Tomato <br />
+                <input type="checkbox" name="topping" value="cheese" /> Cheese <br />
+            </fieldset>
+
+            <fieldset>
+                <legend>Sauce:</legend>
+                Select sauce:<select multiple size="3">
+                    <option>Garlic</option>
+                    <option>Soft ketchup</option>
+                    <option>Chili ketchup</option>
+                    <option>Olive oil</option>
+                </select><br />
+                Notes:<textarea cols="70" rows="5"></textarea>
+            </fieldset><br />
+
+            <input type="reset" value="Clear" />
+            <input type="submit" value="Send order" />
+        </form>
+    </div>
+</body>
+
+</html>

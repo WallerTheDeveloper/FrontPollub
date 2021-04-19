@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotacja</title>
+</head>
+
+<body>
+    <h2>Formularz dotacji</h2>
+    <form action="mailto:b.panczyk@pollub.pl" method="POST">
+        <fieldset>
+            <!--BENEFICJENT-->
+            Beneficjent: <input list="lista" type="text" title="Podaj nazwę beneficjenta"
+                pattern="[a-zA-Ząęźżśóćńł\s]{1,50}" required>
+            <datalist id="lista">
+                <option value="Incegy"></option>
+                <option value="Inciva"></option>
+                <option value="Inc Swap"></option>
+            </datalist><br />
+            <!--BENEFICJENT-->
+
+            <!--wielkość dotacji-->
+            Wartość dotacji: <input type="number" title="Podaj wartość dotacji" min="20" step="5" required>
+            <!--wielkość dotacji-->
+        </fieldset><br />
+        <fieldset>
+            <legend>Dane karty płatniczej</legend>
+            Karta:
+
+            <!--rodzaj karty płatnicze-->
+            <input type="radio" name="method_of_payment" required> Visa
+            <input type="radio" name="method_of_payment" required> MasterCard<br />
+            <!--rodzaj karty płatnicze-->
+            <label>Numer: </label>
+
+            <!--numer karty-->
+            <input type="text" title="Podaj numer karty (13 lub 16 cyfr)" inputmode="numeric"
+                pattern="(^[0-9]{13}$)|(^[0-9]{16}$)" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" required><br />
+            <!--numer karty-->
+
+            <!--data ważności karty-->
+            Data ważności: <input type="month" title="Podaj datę" required><br />
+            <!--data ważności karty-->
+
+            <!--kod CVV-->
+            Kod CVV: <input type="text" pattern="^[0-9]{3,4}$"
+                title="Podaj kod CVV złożony z 3 lub 4 cyfr podanych na odwrocie karty" required>
+            <!--kod CVV-->
+        </fieldset>
+
+        <!--darczyńca-->
+        Darczyńca<input type="text" title="Podaj przynajmniej 3 znaki" pattern="^[a-zA-Ząęźżśóćńł]{3,15}$"
+            required><br />
+        <!--darczyńca-->
+
+        <input type="submit" value="Rejestruj">
+        <input type="reset" value="Wyczyść">
+    </form>
+</body>
+
+</html>

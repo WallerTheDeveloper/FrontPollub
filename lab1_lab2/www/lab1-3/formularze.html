@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/formularze.css">
+    <title> Szybki kurs HTML </title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Szybki kurs HTML</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Podstawowe znaczniki</a></li>
+                <li><a href="tabele.html">Tworzenie tabel</a></li>
+                <li><a href="formularze.html">Budowa formularzy</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h2><b>Podstawowe znaczniki formularza HTML:</b></h2>
+            <ul>
+                <li>
+                    <p>&lt;form&gt;- znacznik podstawowy zawierajacy pola formularza</p>
+                </li>
+
+                <li>
+                    <p>&lt;input&gt;- znacznik umozliwia wstawienie roznych pol</p>
+                </li>
+
+                <li>
+                    <p>&lt;select&gt;- pole formularza typu lista rozwijana</p>
+                </li>
+
+                <li>
+                    <p>&lt;textarea&gt;- pole formularza typu obszar tekstowy</p>
+                </li>
+
+                <li>
+                    <p>&lt;button&gt;- pole formularza typu przycisk</p>
+                </li>
+            </ul>
+        </section>
+        <div>
+
+            <h2><b>Examplary form:</b></h2>
+            <form action="mailto:beatap@cs.pollub.pl" method="post">
+                <!-- Przykładowe typy znacznika input -->
+                Name:<input type="text" name="login" /><br />
+                Age:<input type="number" name="age" /><br />
+                Country:
+                <select name="country_list">
+                    <option>Poland</option>
+                    <option>Ukraine</option>
+                    <option>USA</option>
+                    <option>India</option>
+                </select><br />
+                Email: <input type="email" name="email_adres" />
+                <h4>Want to learn:</h4>
+                <input type="checkbox" name="language" value="PHP" id="choice1" /><label for="choice1">PHP</label>
+                <input type="checkbox" name="language" value="C/C++" id="choice2" /> <label for="choice2">C/C++</label>
+                <input type="checkbox" name="language" value="Java" id="choice3" /> <label for="choice3">Java</label>
+                <br />
+                <h4>Method of payment</h4>
+                <input type="radio" name="method_of_payment" value="eurocard" /> Eurocard
+                <input type="radio" name="method_of_payment" value="visa" /> Visa
+                <input type="radio" name="method_of_payment" value="bank_transfer" /> Bank transfer <br />
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Reset" />
+            </form>
+        </div><br />
+        <footer> &copy;BP </footer>
+    </main>
+
+</body>
+
+</html>
