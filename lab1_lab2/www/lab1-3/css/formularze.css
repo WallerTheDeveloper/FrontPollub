@@ -1,3 +1,145 @@
-label {
-    background-color: teal;
+body {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 55%, rgba(48,115,255,1) 100%);
+}
+
+/*Navigation*/
+
+#nav {
+    padding: 0; /*usuwa odstęp z lewa*/
+}
+
+ul#nav li {
+    border: 1px solid #377f9b;
+    list-style-type: none;
+    background: rgb(34,195,149);
+    background: linear-gradient(0deg, rgba(34,195,149,1) 54%, rgba(48,147,255,1) 100%);
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+}
+
+ul#nav li:hover {
+    border: 1px solid #3638b4;
+    list-style-type: none; 
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+ul#nav li a {
+    font-family: Monotype Corsiva;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration : none;
+    text-align:center;
+}
+/*Main content*/
+.list {
+    background: rgb(62,195,34);
+    background: linear-gradient(0deg, rgb(171, 195, 34) 0%, rgba(48,147,255,1) 100%);
+    padding: 3%;
+    border-radius: 40px 10px;
+    box-shadow: 60px -16px rgb(68, 168, 143);
+    width: 88%;
+    text-align: center;
+    margin: 5% 0 5% 0;
+}
+
+/*Forma wraz z inputami*/
+
+.formBlock {
+    border: 1px solid #377f9b;
+    list-style-type: none;
+    background: rgb(34,195,149);
+    background: linear-gradient(0deg, rgba(34,195,149,1) 54%, rgba(48,147,255,1) 100%);
+    width: 100%;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    border: none;
+}
+/* Inputy */
+.formBlock table 
+            input[type=text],
+            input[type=number], 
+            input[type=email] {
+    border: 1px solid black;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box; /*algorytm obliczania szerokości i wysokości elementu*/
+    border-radius: 10px;
+    background-color: #3763a5;
+}
+
+.formBlock label {
+	display: inline-block;
+	cursor: pointer; /*kursor - rąka*/
+	padding: 0px 15px;
+	line-height: 34px; /*ustawia odstępy pomiędzy wierszami*/
+    border: 1px solid rgb(153, 153, 153);
+	border-radius: 6px;
+	user-select: none; /*żeby nie kopiować tekst wewnątrz*/
+}
+
+.formBlock  input[type=checkbox],
+            input[type=radio] {
+    display: none;
+}
+
+.formBlock  input[type=checkbox]:checked + label,
+            input[type=radio]:checked + label { /*każdy label odrazu po input*/
+	background: #6a7e32;
+}
+
+.formBlock label:hover {
+	color: rgb(36, 138, 179);
+}
+
+/* Country */
+select {
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #3763a5;
+}
+
+select:hover {
+    background-color: rgb(53, 39, 105);
+}
+
+select:focus { /*Country - Przy naciśnięciu */
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3763a5;
+}
+
+/*Przycisk zatwierdzający oraz resetujący */
+
+.formBlock  input[type=submit],
+            input[type=reset]{
+    background-color: rgb(122, 197, 23);
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    margin: 0 0 10px 10px;
+    cursor: pointer; /*kursor - rąka*/
+    border-radius: 10px;
+}
+
+
+.formBlock input[type=submit]:hover,
+           input[type=reset]:hover {
+    background-color: rgb(59, 175, 94);   
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        background: rgb(195,189,34);
+        background: linear-gradient(0deg, rgba(195,189,34,1) 0%, rgba(30,73,119,1) 99%);
+    }
 }

@@ -11,18 +11,27 @@
 <body>
     <main>
         <header>
-            <h1>Szybki kurs HTML</h1>
+            <h1 style="text-align: center;">Szybki kurs HTML</h1>
         </header>
         <nav>
-            <ul>
-                <li><a href="index.html">Podstawowe znaczniki</a></li>
-                <li><a href="tabele.html">Tworzenie tabel</a></li>
-                <li><a href="formularze.html">Budowa formularzy</a></li>
+            <ul id="nav">
+                <li><a href="index.html">
+                        <p>Podstawowe znaczniki</p>
+                    </a></li>
+                <li><a href="tabele.html">
+                        <p>Tworzenie tabel</p>
+                    </a></li>
+                <li><a href="formularze.html">
+                        <p>Budowa formularzy</p>
+                    </a></li>
+                <li><a href="galerie.html">
+                        <p>Galeria</p>
+                    </a></li>
             </ul>
         </nav>
-        <section>
+        <section class="list">
             <h2><b>Podstawowe znaczniki formularza HTML:</b></h2>
-            <ul>
+            <ul style="list-style-type: none; ">
                 <li>
                     <p>&lt;form&gt;- znacznik podstawowy zawierajacy pola formularza</p>
                 </li>
@@ -44,37 +53,50 @@
                 </li>
             </ul>
         </section>
-        <div>
-
-            <h2><b>Examplary form:</b></h2>
+        <section class="formBlock">
+            <h2 style="text-align:center;padding-top:2%;"><b>Przykładowa forma:</b></h2>
             <form action="mailto:beatap@cs.pollub.pl" method="post">
-                <!-- Przykładowe typy znacznika input -->
-                Name:<input type="text" name="login" /><br />
-                Age:<input type="number" name="age" /><br />
-                Country:
-                <select name="country_list">
-                    <option>Poland</option>
-                    <option>Ukraine</option>
-                    <option>USA</option>
-                    <option>India</option>
-                </select><br />
-                Email: <input type="email" name="email_adres" />
+                <table style="width: 100%;">
+                    <tr>
+                        <td>Name:<input type="text" name="login" /></td>
+                    </tr>
+                    <tr>
+                        <td>Age:<input type="number" name="age" /></td>
+                    </tr>
+                    <tr>
+                        <td>Country:
+                            <select name="country_list">
+                                <option>Poland</option>
+                                <option>Ukraine</option>
+                                <option>USA</option>
+                                <option>India</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Email: <input type="email" name="email_adres" /></td>
+                    </tr>
+                </table>
                 <h4>Want to learn:</h4>
-                <input type="checkbox" name="language" value="PHP" id="choice1" /><label for="choice1">PHP</label>
-                <input type="checkbox" name="language" value="C/C++" id="choice2" /> <label for="choice2">C/C++</label>
-                <input type="checkbox" name="language" value="Java" id="choice3" /> <label for="choice3">Java</label>
+                <input type="checkbox" name="language" value="PHP" id="choicePHP" /><label for="choicePHP">PHP</label>
+                <input type="checkbox" name="language" value="C/C++" id="choiceCPP" /> <label
+                    for="choiceCPP">C/C++</label>
+                <input type="checkbox" name="language" value="Java" id="choiceJava" /> <label
+                    for="choiceJava">Java</label>
                 <br />
                 <h4>Method of payment</h4>
-                <input type="radio" name="method_of_payment" value="eurocard" /> Eurocard
-                <input type="radio" name="method_of_payment" value="visa" /> Visa
-                <input type="radio" name="method_of_payment" value="bank_transfer" /> Bank transfer <br />
-                <input type="submit" value="Submit" />
-                <input type="reset" value="Reset" />
+                <input type="radio" name="method_of_payment" value="eurocard" id="choiceEuroCard" /> <label
+                    for="choiceEuroCard">Eurocard</label>
+                <input type="radio" name="method_of_payment" value="visa" id="choiceVisa" /> <label
+                    for="choiceVisa">Visa</label>
+                <input type="radio" name="method_of_payment" value="bank_transfer" id="choiceTransfer" /> <label
+                    style="margin-bottom: 3%;" for="choiceTransfer">Bank transfer</label><br />
+                <input type="submit" value="Zatwierdź" />
+                <input type="reset" value="Resetuj" />
             </form>
-        </div><br />
-        <footer> &copy;BP </footer>
+        </section>
+        <footer style="text-align: center;"> &copy;DG </footer>
     </main>
-
 </body>
 
 </html>

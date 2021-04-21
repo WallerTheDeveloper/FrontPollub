@@ -1,0 +1,21 @@
+body {
+    background: rgb(195,189,34);
+    background: linear-gradient(0deg, rgba(195,189,34,1) 0%, rgba(30,73,119,1) 99%);
+}
+
+/*Przycisk zatwierdzający oraz resetujący */
+input[type=submit], 
+input[type=reset]{
+    background-color: rgb(214, 218, 34);
+    border: none;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    cursor: pointer; /*kursor - rąka*/
+    border-radius: 10px;
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: rgb(59, 175, 94);   
+}

@@ -67,3 +67,9 @@ tfoot a {
 tr:nth-child(even) {
     background:#3c17e2;
 }
+
+@media screen and (max-width:1020px){
+    nav ul li {
+        width: 100%;
+    }
+}
