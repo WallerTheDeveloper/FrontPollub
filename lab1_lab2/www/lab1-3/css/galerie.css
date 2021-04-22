@@ -144,4 +144,22 @@ ul#nav li:hover ul {
     .images {
         display: block;
     }
+
+    #nav li {
+        width: 90%;
+        text-align: center;
+    }
+    #nav ul li {
+        background-color:rgb(175, 173, 61);
+        width: auto;
+    }
+
+    section {
+        width: 80%;
+    }
+    aside{
+        text-align: center;
+        width: 95%;
+        clear:both;
+    }
 }
