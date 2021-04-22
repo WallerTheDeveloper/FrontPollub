@@ -11,38 +11,61 @@
 <body>
     <h1>Pizza creator</h1>
     <main>
-        <form action="mailto:beatap@cs.pollub.pl" method="post">
-            <fieldset>
-                <legend>Size:</legend>
-                <input type="radio" name="size" value="small" /> Small
-                <input type="radio" name="size" value="average" /> Average
-                <input type="radio" name="size" value="big" /> Big
-            </fieldset>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Podstawy</a></li>
+                <li><a href="tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                    <ul>
+                        <li><a href="formularze.html">Pola formularza</a></li>
+                        <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
+                    </ul>
+                </li>
+                <li><a href="galerie.html">Galeria</a></li>
+                <li><a href="">Złożyć zamówienie</a></li>
+            </ul>
+        </nav>
+        <div class="formBlock">
+            <form action="mailto:beatap@cs.pollub.pl" method="post">
+                <fieldset class="size">
+                    <legend>Size:</legend>
+                    <input type="radio" name="size" id="small" value="small" /><label for="small">
+                        Small</label>
+                    <input type="radio" name="size" id="average" value="average" /><label for="average">Average</label>
+                    <input type="radio" name="size" id="big" value="big" /><label for="big">Big</label>
+                </fieldset>
 
-            <fieldset>
-                <legend>Extra toppings:</legend>
-                <input type="checkbox" name="topping" value="ham" /> Ham <br />
-                <input type="checkbox" name="topping" value="salami" /> Salami <br />
-                <input type="checkbox" name="topping" value="bacon" /> Bacon <br />
-                <input type="checkbox" name="topping" value="paprika" /> Paprika <br />
-                <input type="checkbox" name="topping" value="tomato" /> Tomato <br />
-                <input type="checkbox" name="topping" value="cheese" /> Cheese <br />
-            </fieldset>
+                <fieldset class="extra">
+                    <legend>Extra toppings:</legend>
+                    <input type="checkbox" id="ham" name="topping" value="ham" /><label for="ham">Ham
+                    </label><br />
+                    <input type="checkbox" id="salami" name="topping" value="salami" /><label for="salami">
+                        Salami</label><br />
+                    <input type="checkbox" id="bacon" name="topping" value="bacon" /><label for="bacon">Bacon</label>
+                    <br />
+                    <input type="checkbox" id="paprika" name="topping" value="paprika" /><label
+                        for="paprika">Paprika</label> <br />
+                    <input type="checkbox" id="tomato" name="topping" value="tomato" /><label for="tomato">
+                        Tomato</label><br />
+                    <input type="checkbox" id="cheese" name="topping" value="cheese" /><label
+                        for="cheese">Cheese</label><br />
+                </fieldset>
 
-            <fieldset>
-                <legend>Sauce:</legend>
-                Select sauce:<select multiple size="3">
-                    <option>Garlic</option>
-                    <option>Soft ketchup</option>
-                    <option>Chili ketchup</option>
-                    <option>Olive oil</option>
-                </select><br />
-                Notes:<textarea cols="70" rows="5"></textarea>
-            </fieldset><br />
+                <fieldset class="sauce">
+                    <legend>Sauce:</legend>
+                    <p>Select sauce:</p><select multiple size="3">
+                        <option>Garlic</option>
+                        <option>Soft ketchup</option>
+                        <option>Chili ketchup</option>
+                        <option>Olive oil</option>
+                    </select><br />
+                    <p>Notes:</p><textarea cols="10" rows="2"></textarea>
+                </fieldset><br />
 
-            <input type="reset" value="Clear" />
-            <input type="submit" value="Send order" />
-        </form>
+                <input type="reset" value="Clear" />
+                <input type="submit" value="Send order" />
+            </form>
+        </div>
     </main>
 </body>
 

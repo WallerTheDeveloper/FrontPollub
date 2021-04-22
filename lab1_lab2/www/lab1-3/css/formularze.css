@@ -47,6 +47,10 @@ ul#nav li a {
 }
 
 /*Forma wraz z inputami*/
+::placeholder {
+    color: rgb(179, 255, 0);
+}
+
 
 .formBlock {
     border: 1px solid #377f9b;
