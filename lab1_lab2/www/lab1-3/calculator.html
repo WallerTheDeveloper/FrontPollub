@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/calculator.css" rel="stylesheet" type="text/css" />
+    <title> Szybki kurs HTML </title>
+    <script src="JS/funkcje.js"></script>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Kalkulatorek</legend>
+        <div class="numbers">
+            <h3>Wpisz liczby:</h3>
+            X: <br />
+            <p><input id="valueX"></p>
+            Y:<br />
+            <input id="valueY"> <br />
+            <button onclick="calculator()">Oblicz</button>
+        </div>
+        <div class="operation">
+            <h3>Wskaż działania:</h3>
+            <input name="operator" value="plus" type="radio"> + <br />
+            <input name="operator" value="minus" type="radio"> - <br />
+            <input name="operator" value="mult" type="radio"> * <br />
+            <input name="operator" value="divide" type="radio"> / <br />
+            Wynik: <input id="result" disabled>
+        </div>
+    </fieldset>
+</body>
+
+</html>

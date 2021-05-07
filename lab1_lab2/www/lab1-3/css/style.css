@@ -124,4 +124,12 @@ nav ul#nav li{
         width:100%;
         text-decoration: none;
     }
+    #nav li {
+        width: 90%;
+        text-align: center;
+    }
+    #nav ul li {
+        background-color:rgb(175, 173, 61);
+        width: auto;
+    }
 }

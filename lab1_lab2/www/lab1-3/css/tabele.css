@@ -17,6 +17,8 @@ table {
     width:94%;
     margin:2%;
     border:1pt solid #000040;
+    border-spacing: 1px 0;
+    border-collapse: separate;
 }
 
 nav ul li:hover {

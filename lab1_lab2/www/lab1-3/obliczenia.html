@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <title> Szybki kurs HTML </title>
+    <script src="JS/funkcje.js"></script>
+    <title> Strona obliczeń</title>
 </head>
 
 <body>
@@ -21,7 +22,6 @@
                     <ul>
                         <li><a href="formularze.html">Pola formularza</a></li>
                         <li><a href="obliczenia.html">Obliczenia w formularzu</a></li>
-                        <li><a href="calculator.html">Kalkulatorek</a></li>
                     </ul>
                 </li>
                 <li><a href="galerie.html">Galeria</a></li>
@@ -29,18 +29,40 @@
             </ul>
         </nav>
         <section>
-            <h3 style="text-align: center;">Podstawowe znaczniki HTML to:</h3>
-            <ul>
-                <li>&lt;html&gt;- korzen dokumentu</li>
-                <li>&lt;head&gt;- naglowek</li>
-                <li>&lt;body&gt;- tresc dokumentu</li>
-                <li>&lt;div&gt;- element bloku</li>
-                <li>&lt;p&gt;- akapit</li>
-                <li>&lt;ol&gt;, &lt;ul&gt; oraz &lt;li&gt;- elementy listy wypunktowanej lub numerowanej</li>
-                <li>&lt;img&gt;- obrazek</li>
-                <li>&lt;a&gt;- hiperlacze</li>
-            </ul>
-            <img class="kappaimg" src="images/kappa.png" width="80" height="80" alt="kappa"><br /><br />
+            <table style="border:1px solid green;">
+                <th>Pożyczka</th>
+                <tbody>
+                    <tr>
+                        <td>
+                            Kwota pożyczki:<input id="kwota">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Oprocentowanie roczne:<input id="oprRoczne">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Liczba rat:<input id="liczbaRat">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Oprocenitowanie w skali miesiąca:<input id="oprMies" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rata wynosi:<input id="rata" disabled>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button onclick="obliczRate()">Oblicz ratę</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
         <aside>
             <div class="box">
